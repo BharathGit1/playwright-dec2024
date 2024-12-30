@@ -14,13 +14,13 @@ test('Log in to sales force', async () => {
 
     await page.click('input[name="Login"]');
 
+    await page.waitForTimeout(10000);
+
     let title = await page.title()
     console.log("The title is: " + title)
 
     let url = await page.url()
     console.log("The url is: " + url)
 
-    await page.waitForTimeout(10000);
-
-    //await page.close()
+    await page.close()
 })
