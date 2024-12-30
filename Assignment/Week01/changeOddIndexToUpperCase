@@ -1,0 +1,15 @@
+
+let input = "debugconsole"
+
+inputArray = input.split('')
+
+changeOddIndexToUpperCase()
+
+function changeOddIndexToUpperCase() {
+    for (i = 0; i < input.length; i++) {
+        if (i % 2 != 0) {
+            inputArray[i] = inputArray[i].toUpperCase()
+        }
+    }
+    console.log(inputArray.join('')) 
+}
